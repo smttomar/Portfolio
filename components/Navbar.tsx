@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useActiveSection } from "@/components/ActiveSectionProvider";
+import Image from "next/image";
 
 const sections = [
     { id: "home", label: "Home" },
@@ -37,9 +38,14 @@ export default function Navbar() {
             <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="font-semibold text-lg">
-                    C. P. Singh
+                    <Image
+                        src="/cplogo.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                        priority
+                    />
                 </Link>
-
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-6">
                     {pathname === "/" &&

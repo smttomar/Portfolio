@@ -17,6 +17,9 @@ export const metadata: Metadata = {
         default: "Chandra Pratap Singh | Full Stack Developer",
         template: "%s | Chandra Pratap Singh",
     },
+    icons: {
+        icon: "/icon.svg",
+    },
     description:
         "Portfolio of Chandra Pratap Singh, a Computer Applications student and full stack developer specializing in Next.js, TypeScript, and modern web technologies.",
     verification: {

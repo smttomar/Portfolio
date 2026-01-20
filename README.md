@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Personal Portfolio – Chandra Pratap Singh
 
-## Getting Started
+A modern, high-performance, fully responsive developer portfolio built with Next.js App Router, TypeScript, and Tailwind CSS, showcasing my projects, skills, and experience with a strong focus on performance, accessibility, and SEO.
 
-First, run the development server:
+🌐 Live Site: https://portfolio-sand-beta-23.vercel.app
 
-```bash
+## ✨ Features
+
+⚡ Next.js App Router (v16+)  
+🌙 Dark / Light Theme Toggle (Tailwind CSS v4 custom variant)  
+📱 Fully Responsive (Mobile & Desktop)  
+🎯 Scroll-based section animations  
+🧭 Active section highlight in navbar  
+📊 Vercel Analytics integration  
+🔍 SEO optimized (Metadata, Sitemap, Robots.txt, Open Graph)  
+🧪 Lighthouse scores: Performance 99, Accessibility 96, Best Practices 96, SEO 100  
+🧩 Reusable components & clean architecture  
+🗂 Dynamic project detail pages  
+🖼 Optional project images support  
+🧠 GitHub contribution graph  
+📄 Resume download  
+🔗 Social links (GitHub, LinkedIn, X, Instagram)
+
+## 🛠 Tech Stack
+
+Framework: Next.js (App Router)  
+Language: TypeScript  
+Styling: Tailwind CSS v4  
+Animations: Framer Motion  
+Analytics: Vercel Analytics  
+SEO: Next.js Metadata API  
+Deployment: Vercel
+
+## 📁 Project Structure
+
+app/  
+ ├─ layout.tsx  
+ ├─ page.tsx  
+ ├─ projects/  
+ │ └─ [slug]/  
+ │ └─ page.tsx  
+components/  
+ ├─ Navbar.tsx  
+ ├─ ProjectCard.tsx  
+ ├─ RightPanel.tsx  
+ ├─ ThemeToggle.tsx  
+sections/  
+ ├─ About.tsx  
+ ├─ Skills.tsx  
+ ├─ Education.tsx  
+ ├─ Contact.tsx  
+public/  
+ ├─ logo.svg  
+ ├─ resume.pdf
+
+## 🚀 Getting Started Locally
+
+Clone the repository:
+
+git clone https://github.com/smttomar/portfolio.git  
+cd portfolio
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📈 Performance & SEO
 
-## Learn More
+This portfolio follows real-world best practices including optimized images using next/image, optimized fonts using next/font, reduced motion support for accessibility, clean semantic HTML, minimal JavaScript usage, and proper indexing through sitemap and robots.txt. The site achieves Lighthouse scores above 95 across all categories.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌍 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is deployed on Vercel with automatic CI/CD from GitHub, HTTPS enabled by default, global CDN delivery, Vercel Analytics, and production-grade performance optimizations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👤 About Me
 
-## Deploy on Vercel
+I’m Chandra Pratap Singh, a Computer Applications student passionate about building modern, scalable web applications using Next.js, TypeScript, and clean frontend architecture. I enjoy turning ideas into fast, accessible, and user-friendly web experiences.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact & Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Portfolio: https://portfolio-sand-beta-23.vercel.app  
+LinkedIn: https://www.linkedin.com/in/chandra-pratap-singh-13a99a282/  
+GitHub: https://github.com/smttomar  
+X (Twitter): https://x.com/smttomarr  
+Instagram: https://instagram.com/smttomar
+
+## ⭐ Feedback
+
+If you like this project, feel free to star the repository or reach out for collaboration opportunities.

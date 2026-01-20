@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         title: "Chandra Pratap Singh | Full Stack Developer",
         description:
             "Explore projects, skills, and experience of Chandra Pratap Singh, a full stack developer focused on modern web development.",
-        url: "https://your-portfolio-url.vercel.app",
+        url: "https://portfolio-sand-beta-23.vercel.app/",
         siteName: "Chandra Pratap Singh Portfolio",
         images: [
             {

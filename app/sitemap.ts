@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = "https://your-portfolio.vercel.app";
+    const baseUrl = "https://portfolio-sand-beta-23.vercel.app/";
 
     return [
         {

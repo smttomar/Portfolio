@@ -1,6 +1,6 @@
 export default function robots() {
     return {
         rules: [{ userAgent: "*", allow: "/" }],
-        sitemap: "https://your-portfolio.vercel.app/sitemap.xml",
+        sitemap: "https://portfolio-sand-beta-23.vercel.app/sitemap.xml",
     };
 }

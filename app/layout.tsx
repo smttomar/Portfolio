@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     },
     description:
         "Portfolio of Chandra Pratap Singh, a Computer Applications student and full stack developer specializing in Next.js, TypeScript, and modern web technologies.",
+    verification: {
+        google: "Hv2FDirXAnKWYQuYnX7sO9kelR-WgyjucKSRi1x6J_Q",
+    },
     keywords: [
         "Chandra Pratap Singh",
         "Full Stack Developer",

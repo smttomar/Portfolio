@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ActiveSectionProvider } from "@/components/ActiveSectionProvider";
@@ -85,6 +86,7 @@ export default function RootLayout({
                         {children}
                     </ActiveSectionProvider>
                     <Footer />
+                    <Analytics />
                 </ThemeProvider>
                 <Analytics />
             </body>

@@ -161,30 +161,58 @@ function AboutVisual({ color }: { color: string }) {
 
 function SkillsVisual({ color }: { color: string }) {
     const skills = [
-        { icon: <SiJavascript />, label: "JavaScript" },
-        { icon: <SiNextdotjs />, label: "Next.js" },
-        { icon: <SiNodedotjs />, label: "Node.js" },
-        { icon: <SiReact />, label: "React" },
-        { icon: <SiExpress />, label: "Express" },
-        { icon: <SiPostgresql />, label: "PostgreSQL" },
-        { icon: <SiMysql />, label: "MySQL" },
-        { icon: <SiTypescript />, label: "TypeScript" },
-        { icon: <SiTailwindcss />, label: "Tailwind" },
-        { icon: <SiMongodb />, label: "MongoDB" },
-        { icon: <SiVercel />, label: "Vercel" },
-        { icon: <SiPrisma />, label: "Prisma" },
+        {
+            icon: <SiJavascript />,
+            label: "JavaScript",
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        },
+        { icon: <SiNextdotjs />, label: "Next.js", url: "https://nextjs.org" },
+        { icon: <SiNodedotjs />, label: "Node.js", url: "https://nodejs.org" },
+        { icon: <SiReact />, label: "React", url: "https://react.dev" },
+        { icon: <SiExpress />, label: "Express", url: "https://expressjs.com" },
+        {
+            icon: <SiPostgresql />,
+            label: "PostgreSQL",
+            url: "https://www.postgresql.org",
+        },
+        { icon: <SiMysql />, label: "MySQL", url: "https://www.mysql.com" },
+        {
+            icon: <SiTypescript />,
+            label: "TypeScript",
+            url: "https://www.typescriptlang.org",
+        },
+        {
+            icon: <SiTailwindcss />,
+            label: "Tailwind",
+            url: "https://tailwindcss.com",
+        },
+        {
+            icon: <SiMongodb />,
+            label: "MongoDB",
+            url: "https://www.mongodb.com",
+        },
+        { icon: <SiVercel />, label: "Vercel", url: "https://vercel.com" },
+        { icon: <SiPrisma />, label: "Prisma", url: "https://www.prisma.io" },
     ];
 
     return (
         <div className="grid grid-cols-3 gap-4">
             {skills.map((s) => (
-                <div
+                <a
                     key={s.label}
-                    className="flex flex-col items-center gap-2 rounded-lg border dark:text-neutral-400 text-neutral-700 border-neutral-700 p-3 dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition"
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${s.label} official website`}
+                    className="flex flex-col items-center gap-2 rounded-lg border p-3 
+                 text-neutral-700 dark:text-neutral-400 border-neutral-700
+                 hover:bg-black hover:text-white
+                 dark:hover:bg-white dark:hover:text-black
+                 transition focus:outline-none hover:scale-110"
                 >
                     <span className="text-xl">{s.icon}</span>
                     <span className="text-xs">{s.label}</span>
-                </div>
+                </a>
             ))}
         </div>
     );
@@ -212,7 +240,8 @@ function ContactVisual({ color }: { color: string }) {
                 Open to internships, freelance, and collaboration.
             </p>
             <a
-                href="#contact"
+                href="mailto:sumitsngtmr@gmail.com"
+                target="blank"
                 className="inline-block rounded-md border dark:border-white border-black px-4 py-2 text-sm dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition"
             >
                 Contact Me

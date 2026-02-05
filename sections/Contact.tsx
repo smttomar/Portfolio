@@ -56,7 +56,7 @@ export default function Contact() {
 
                         window.location.href = `mailto:sumitsnghtmr@gmail.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(
                             `Name: ${name}\nEmail: ${email}\n\n${message}`,
-                        )}`;
+                        )}$`;
 
                         setLoading(false);
                         form.reset();
@@ -103,7 +103,7 @@ export default function Contact() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="inline-flex items-center gap-2 rounded-md border dark:border-white border-black px-6 py-3 text-sm dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition disabled:opacity-50"
+                        className="inline-flex items-center gap-2 rounded-md border dark:border-white border-black px-6 py-3 text-sm dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white hover:cursor-pointer transition disabled:opacity-50"
                     >
                         {loading ? "Sending..." : "Send Message →"}
                     </button>

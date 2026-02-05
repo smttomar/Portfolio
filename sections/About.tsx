@@ -20,15 +20,10 @@ export default function About() {
     }, [setActive]);
 
     return (
-        <Reveal>
-            <section
-                ref={ref}
-                id="about"
-                className="min-h-screen snap-start py-20"
-            >
-                <h2 className="text-3xl font-bold mb-6">About Me</h2>
-
-                <p className="max-w-2xl text-neutral-700 dark:text-neutral-400 leading-relaxed">
+        <section ref={ref} id="about" className="min-h-screen snap-start py-20">
+            <Reveal>
+                <h2 className="text-3xl font-bold mb-16">About Me</h2>
+                <p className="max-w-2xl text-neutral-700 dark:text-neutral-400 leading-relaxed mt-5">
                     I am a Full-Stack Developer experienced in building
                     real-world web applications using the MERN stack and
                     Next.js. I work across both frontend and backend, creating
@@ -41,9 +36,9 @@ export default function About() {
                     writing clean, maintainable code and continuously improving
                     my skills through hands-on development.
                 </p>
-                <GithubStats />
-                <GithubContributions />
-            </section>
-        </Reveal>
+            </Reveal>
+            <GithubStats />
+            <GithubContributions />
+        </section>
     );
 }

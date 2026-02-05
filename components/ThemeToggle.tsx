@@ -16,7 +16,7 @@ export default function ThemeToggle() {
         <button
             onClick={() => setTheme(isDark ? "light" : "dark")}
             aria-label="Toggle theme"
-            className="relative inline-flex h-8 w-14 items-center rounded-full bg-neutral-300 dark:bg-neutral-700 transition-colors"
+            className="relative inline-flex h-8 w-14 items-center rounded-full hover:cursor-pointer bg-neutral-300 dark:bg-neutral-700 transition-colors"
         >
             {/* Sliding circle */}
             <span

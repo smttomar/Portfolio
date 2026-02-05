@@ -17,7 +17,7 @@ const socials = [
     },
     {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/in/chandra-pratap-singh-13a99a282/",
+        href: "https://www.linkedin.com/in/cptomar/",
         icon: FaLinkedin,
     },
     {

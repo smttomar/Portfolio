@@ -22,6 +22,8 @@ import {
     SiVercel,
     SiPrisma,
 } from "react-icons/si";
+
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -97,7 +99,7 @@ export default function RightPanel() {
                                     ? undefined
                                     : { opacity: 0, y: -12 }
                             }
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 1 }}
                             className="flex flex-col items-center gap-4 pt-4 text-center"
                         >
                             {active === "home" && <HomeVisual color={accent} />}
@@ -144,6 +146,23 @@ function HomeVisual({ color }: { color: string }) {
 }
 
 function AboutVisual({ color }: { color: string }) {
+    const socials = [
+        {
+            name: "GitHub",
+            href: "https://github.com/smttomar",
+            icon: FaGithub,
+        },
+        {
+            name: "LinkedIn",
+            href: "https://www.linkedin.com/in/cptomar/",
+            icon: FaLinkedin,
+        },
+        {
+            name: "Resume",
+            href: "/resume.pdf",
+            icon: FaFilePdf,
+        },
+    ];
     return (
         <motion.div
             layoutId="profile-image"
@@ -155,6 +174,24 @@ function AboutVisual({ color }: { color: string }) {
                 passionate about building scalable, secure, and production-ready
                 web applications.
             </p>
+            <div className="flex justify-center mt-5 items-center gap-4">
+                {socials.map(({ name, href, icon: Icon }) => (
+                    <a
+                        key={name}
+                        href={href}
+                        target={href.startsWith("http") ? "_blank" : undefined}
+                        rel={
+                            href.startsWith("http")
+                                ? "noopener noreferrer"
+                                : undefined
+                        }
+                        aria-label={name}
+                        className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
+                    >
+                        <Icon size={25} />
+                    </a>
+                ))}
+            </div>
         </motion.div>
     );
 }

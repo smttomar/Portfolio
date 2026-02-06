@@ -101,7 +101,7 @@ export const projects: Project[] = [
         image: "/projects/task.png",
     },
     {
-        slug: "Therapy Website",
+        slug: "Therapy-Website",
         title: "Therapy Website (Frontend)",
         description:
             "About Frontend UI clone and redesign of a therapy website using Next.js and Tailwind CSS, focused on calm design, responsive layouts, client-friendly copy, and thoughtful UX based on an imaginary therapist profile.",

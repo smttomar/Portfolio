@@ -2,30 +2,26 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Reveal from "./Reveal";
 import { Project } from "@/data/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
     const hasImage = Boolean(project.image);
 
     return (
-        <motion.article
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.35 }}
-            className="group flex h-fit flex-col overflow-hidden rounded-xl border dark:border-neutral-400 border-neutral-800 dark:bg-black bg-white"
-        >
+        <div className="group flex h-fit flex-col overflow-hidden rounded-xl border dark:border-neutral-400 border-neutral-800 dark:bg-black bg-white">
             {/* IMAGE (ONLY IF AVAILABLE) */}
             {hasImage && (
                 <div className="relative">
-                    <Image
-                        src={project.image!}
-                        alt={project.title}
-                        width={800}
-                        height={450}
-                        className="h-48 w-full object-cover"
-                    />
+                    <Reveal>
+                        <Image
+                            src={project.image!}
+                            alt={project.title}
+                            width={800}
+                            height={450}
+                            className="h-48 w-full object-cover"
+                        />
+                    </Reveal>
                     {/* IMAGE CTA */}
                     <Link
                         href={`/projects/${project.slug}`}
@@ -41,26 +37,36 @@ export default function ProjectCard({ project }: { project: Project }) {
                 {/* BACKGROUND GLOW (TEXT-ONLY) */}
                 {!hasImage && (
                     <div className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
-                        <div className="absolute inset-0 bg-linear-to-br dark:from-white/5 from-white/40 via-transparent to-transparent" />
+                        <Reveal>
+                            <div className="absolute inset-0 bg-linear-to-br dark:from-white/5 from-white/40 via-transparent to-transparent" />
+                        </Reveal>
                     </div>
                 )}
 
-                <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
+                <Reveal>
+                    <h3 className="mb-2 text-xl font-semibold">
+                        {project.title}
+                    </h3>
+                </Reveal>
 
-                <p className="mb-4 text-sm dark:text-neutral-400 text-neutral-800">
-                    {project.description}
-                </p>
+                <Reveal>
+                    <p className="mb-4 text-sm dark:text-neutral-400 mt-3 text-neutral-800">
+                        {project.description}
+                    </p>
+                </Reveal>
 
                 {/* TEXT-ONLY CTA */}
                 {!hasImage && (
-                    <Link
-                        href={`/projects/${project.slug}`}
-                        className="mt-auto inline-flex items-center gap-1 text-sm underline underline-offset-4 transition group-hover:translate-x-1"
-                    >
-                        View Details →
-                    </Link>
+                    <Reveal>
+                        <Link
+                            href={`/projects/${project.slug}`}
+                            className="mt-auto inline-flex items-center gap-1 text-sm underline underline-offset-4 transition group-hover:translate-x-1"
+                        >
+                            View Details →
+                        </Link>
+                    </Reveal>
                 )}
             </div>
-        </motion.article>
+        </div>
     );
 }

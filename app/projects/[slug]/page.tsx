@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 /* 1️⃣ Static generation */
 export async function generateStaticParams() {
@@ -29,52 +30,66 @@ export default async function ProjectDetailPage({ params }: Props) {
             <div className="max-w-3xl mx-auto px-4">
                 {/* Project Image */}
                 {project.image && (
-                    <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={1200}
-                        height={630}
-                        priority
-                        className="rounded-lg mb-8 border border-neutral-800"
-                    />
+                    <Reveal>
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            width={1200}
+                            height={630}
+                            priority
+                            className="rounded-lg mb-8 border border-neutral-800"
+                        />
+                    </Reveal>
                 )}
 
-                <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+                <Reveal>
+                    <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+                </Reveal>
 
-                <p className="text-neutral-800 dark:text-neutral-400 mb-8">
-                    {project.description}
-                </p>
+                <Reveal>
+                    <p className="text-neutral-800 dark:text-neutral-400 mb-8 mt-3">
+                        {project.description}
+                    </p>
+                </Reveal>
 
-                <h2 className="text-xl font-semibold mb-3">Tech Stack</h2>
+                <Reveal>
+                    <h2 className="text-xl font-semibold mb-3">Tech Stack</h2>
+                </Reveal>
 
-                <div className="flex flex-wrap gap-3 mb-8">
-                    {project.techStack.map((tech) => (
-                        <span
-                            key={tech}
-                            className="px-3 py-1 text-sm border border-neutral-700 rounded"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                </div>
+                <Reveal>
+                    <div className="flex flex-wrap gap-3 mb-8">
+                        {project.techStack.map((tech) => (
+                            <span
+                                key={tech}
+                                className="px-3 py-1 text-sm border mt-2 border-neutral-700 rounded"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </Reveal>
 
                 <div className="flex gap-6">
-                    <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        className="underline"
-                    >
-                        GitHub
-                    </a>
-
-                    {project.liveUrl && (
+                    <Reveal>
                         <a
-                            href={project.liveUrl}
+                            href={project.githubUrl}
                             target="_blank"
                             className="underline"
                         >
-                            Live Demo
+                            GitHub
                         </a>
+                    </Reveal>
+
+                    {project.liveUrl && (
+                        <Reveal>
+                            <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                className="underline"
+                            >
+                                Live Demo
+                            </a>
+                        </Reveal>
                     )}
                 </div>
             </div>

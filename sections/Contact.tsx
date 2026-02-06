@@ -20,52 +20,56 @@ export default function Contact() {
     }, [setActive]);
 
     return (
-        <Reveal>
-            <section
-                ref={ref}
-                id="contact"
-                className="min-h-screen snap-start py-20"
-            >
+        <section
+            ref={ref}
+            id="contact"
+            className="min-h-screen snap-start py-20"
+        >
+            <Reveal>
                 <h2 className="text-3xl font-bold mb-6">Contact</h2>
+            </Reveal>
 
-                <p className="text-neutral-700 dark:text-neutral-400 mb-5 max-w-xl">
+            <Reveal>
+                <p className="text-neutral-700 dark:text-neutral-400 mb-5 mt-5 max-w-xl">
                     I’m currently open to internship and job opportunities. Feel
                     free to reach out if you’d like to connect or collaborate.
                 </p>
                 <p className="text-sm text-neutral-500 mb-5">
                     🟢 Available for new opportunities
                 </p>
-                <form
-                    onSubmit={(e) => {
-                        e.preventDefault();
-                        setLoading(true);
+            </Reveal>
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    setLoading(true);
 
-                        // Mailto fallback (no backend)
-                        const form = e.currentTarget;
-                        const name = (
-                            form.elements.namedItem("name") as HTMLInputElement
-                        ).value;
-                        const email = (
-                            form.elements.namedItem("email") as HTMLInputElement
-                        ).value;
-                        const message = (
-                            form.elements.namedItem(
-                                "message",
-                            ) as HTMLTextAreaElement
-                        ).value;
+                    // Mailto fallback (no backend)
+                    const form = e.currentTarget;
+                    const name = (
+                        form.elements.namedItem("name") as HTMLInputElement
+                    ).value;
+                    const email = (
+                        form.elements.namedItem("email") as HTMLInputElement
+                    ).value;
+                    const message = (
+                        form.elements.namedItem(
+                            "message",
+                        ) as HTMLTextAreaElement
+                    ).value;
 
-                        window.location.href = `mailto:sumitsnghtmr@gmail.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(
-                            `Name: ${name}\nEmail: ${email}\n\n${message}`,
-                        )}$`;
+                    window.location.href = `mailto:sumitsnghtmr@gmail.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(
+                        `Name: ${name}\nEmail: ${email}\n\n${message}`,
+                    )}$`;
 
-                        setLoading(false);
-                        form.reset();
-                    }}
-                    className="max-w-xl space-y-6"
-                >
-                    {/* Name */}
-                    <div>
-                        <label className="block text-sm mb-2">Name</label>
+                    setLoading(false);
+                    form.reset();
+                }}
+                className="max-w-xl space-y-6"
+            >
+                {/* Name */}
+                <div>
+                    <label className="block text-sm mb-2">Name</label>
+                    <Reveal>
                         <input
                             type="text"
                             name="name"
@@ -73,11 +77,13 @@ export default function Contact() {
                             className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="Your name"
                         />
-                    </div>
+                    </Reveal>
+                </div>
 
-                    {/* Email */}
-                    <div>
-                        <label className="block text-sm mb-2">Email</label>
+                {/* Email */}
+                <div>
+                    <label className="block text-sm mb-2">Email</label>
+                    <Reveal>
                         <input
                             type="email"
                             name="email"
@@ -85,11 +91,13 @@ export default function Contact() {
                             className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="you@example.com"
                         />
-                    </div>
+                    </Reveal>
+                </div>
 
-                    {/* Message */}
-                    <div>
-                        <label className="block text-sm mb-2">Message</label>
+                {/* Message */}
+                <div>
+                    <label className="block text-sm mb-2">Message</label>
+                    <Reveal>
                         <textarea
                             name="message"
                             rows={4}
@@ -97,9 +105,11 @@ export default function Contact() {
                             className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="Tell me about your idea, project, or role..."
                         />
-                    </div>
+                    </Reveal>
+                </div>
 
-                    {/* Submit */}
+                {/* Submit */}
+                <Reveal>
                     <button
                         type="submit"
                         disabled={loading}
@@ -107,8 +117,8 @@ export default function Contact() {
                     >
                         {loading ? "Sending..." : "Send Message →"}
                     </button>
-                </form>
-            </section>
-        </Reveal>
+                </Reveal>
+            </form>
+        </section>
     );
 }

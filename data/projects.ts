@@ -10,10 +10,20 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        slug: "portfolio",
+        title: "Portfolio",
+        description:
+            "A modern, high-performance, fully responsive developer portfolio built with Next.js App Router, TypeScript, and Tailwind CSS, showcasing my projects, skills, and experience with a strong focus on performance, accessibility, and SEO.",
+        techStack: [" Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+        githubUrl: "https://github.com/smttomar/Portfolio",
+        liveUrl: "https://portfolio-sand-beta-23.vercel.app/",
+        image: "/projects/portfolio.png",
+    },
+    {
         slug: "gigflow",
         title: "GigFlow – Full Stack Freelance Marketplace",
         description:
-            "GigFlow is a full-stack freelance marketplace platform where users can post gigs, submit bids, and hire freelancers. The application supports role-based access for clients and freelancers, secure authentication, and transaction-safe hiring workflows. It is designed with a modular backend architecture and a scalable frontend interface, focusing on real-world business logic and data consistency.The project emphasizes authentication, authorization, API design, and handling concurrent operations safely using database transactions.",
+            "GigFlow is a mini freelance marketplace platform where client can post jobs (gigs), freelancer bid on jobs, and client hire freelancers.",
         techStack: [
             "React",
             "JavaScript",
@@ -31,9 +41,9 @@ export const projects: Project[] = [
     },
     {
         slug: "cloudinary-saas",
-        title: "Cloudinary SaaS App – Video Compression & Management Platform",
+        title: "Video Compression & Management Platform",
         description:
-            "This SaaS-style application allows users to upload, compress, manage, and play videos through a secure dashboard. The platform uses Cloudinary for media processing and supports features such as auto-compression, video playback, downloads, and deletion. Authentication is implemented to protect user routes and ensure secure access. The project focuses on file handling, third-party service integration, relational database design, and scalable SaaS architecture.",
+            "A full-stack SaaS-style video compression and management platform built with Next.js 16, Clerk Auth, Prisma, PostgreSQL, Cloudinary, and Vercel.",
         techStack: [
             "Next.js",
             "TypeScript",
@@ -55,7 +65,7 @@ export const projects: Project[] = [
         slug: "authentication-app",
         title: "Authentication App – Full-Stack Application",
         description:
-            "This project is a secure authentication system built to handle complete user authentication workflows. It includes user registration, login, email verification, password reset, and logout functionality. The application focuses on security best practices such as password hashing, token-based authentication, and protected routes. The project helped strengthen understanding of authentication flows, API integration, and secure user management.",
+            "A full-stack authentication system built with Next.js (TypeScript) that allows users to sign up, log in, verify their email, and reset their password securely.",
         techStack: [
             "Next.js",
             "TypeScript",
@@ -72,10 +82,39 @@ export const projects: Project[] = [
         image: "/projects/auth.png",
     },
     {
+        slug: "Task-Management-Web-Application",
+        title: "Task Management Web Application",
+        description:
+            "A full-stack Task Management web application built using the MERN stack. Users can create, view, update, delete, and filter tasks with a modern and responsive UI.",
+        techStack: [
+            "React (Vite)",
+            "JavaScript",
+            "Axios",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+        ],
+        githubUrl:
+            "https://github.com/smttomar/Task-Management-Web-Application",
+        liveUrl: "https://task-management-web-application-topaz.vercel.app/",
+        image: "/projects/task.png",
+    },
+    {
+        slug: "Therapy Website",
+        title: "Therapy Website (Frontend)",
+        description:
+            "About Frontend UI clone and redesign of a therapy website using Next.js and Tailwind CSS, focused on calm design, responsive layouts, client-friendly copy, and thoughtful UX based on an imaginary therapist profile.",
+        techStack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+        githubUrl: "https://github.com/smttomar/Grow-My-Therapy-Assignment",
+        liveUrl: "https://grow-my-therapy-assignment-eta.vercel.app",
+        image: "/projects/therapy.png",
+    },
+    {
         slug: "vidtube-backend",
         title: "VidTube Backend – YouTube-like System",
         description:
-            "VidTube is a backend-focused project that provides core functionality for a video-sharing platform. It supports user authentication, video uploads, playlists, likes, and comments. The backend is designed using RESTful principles with middleware-based authentication and structured error handling. This project strengthened backend fundamentals such as API design, file uploads, cloud storage, and secure data access.",
+            "VidTube is a backend for a YouTube-style application built using Node.js, Express, and MongoDB. It includes user authentication, video uploads (Cloudinary + Multer), comments, likes, playlists, and subscriptions.",
         techStack: [
             "Node.js",
             "Express.js",
@@ -87,5 +126,29 @@ export const projects: Project[] = [
             "Multer",
         ],
         githubUrl: "https://github.com/smttomar/VidTube-Backend",
+    },
+    {
+        slug: "Project-Management-backend",
+        title: "Project Management backend",
+        description:
+            "Project Camp Backend is a RESTful API service designed to support collaborative project management. The system enables teams to organize projects, manage tasks with subtasks, maintain project notes, and handle user authentication with role-based access control.",
+        techStack: [
+            "Node.js",
+            "Express.js",
+            "JWT(JSON Web Tokens)",
+            "REST APIs",
+            "bcrypt",
+            "MongoDB",
+        ],
+        githubUrl: "https://github.com/smttomar/Project-Management-backend",
+    },
+    {
+        slug: "Password-Generator-App",
+        title: "Password Generator App",
+        description:
+            "A simple and responsive Password Generator built with React, Vite, and TailwindCSS. This app allows users to generate strong and customizable passwords with options to adjust length, include numbers, symbols, and more.",
+        techStack: ["React 19", "Vite", "TailwindCSS 4"],
+        githubUrl: "https://github.com/smttomar/Password-generator",
+        liveUrl: "https://smttomar.github.io/Password-generator/",
     },
 ];

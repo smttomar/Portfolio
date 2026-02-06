@@ -62,22 +62,26 @@ export default function Skills() {
         return () => observer.disconnect();
     }, [setActive]);
     return (
-        <Reveal>
-            <section
-                ref={ref}
-                id="skills"
-                className="min-h-screen snap-start py-20"
-            >
+        <section
+            ref={ref}
+            id="skills"
+            className="min-h-screen snap-start py-20"
+        >
+            <Reveal>
                 <h2 className="text-3xl font-bold mb-10">Skills</h2>
+            </Reveal>
 
-                <div className="grid gap-5 md:grid-cols-2 max-w-4xl">
-                    {Object.entries(skillsData).map(([category, skills]) => (
-                        <div key={category}>
+            <div className="grid gap-5 md:grid-cols-2 mt-5 max-w-4xl">
+                {Object.entries(skillsData).map(([category, skills]) => (
+                    <div key={category} className="mb-2">
+                        <Reveal>
                             <h3 className="text-xl font-semibold mb-4">
                                 {category}
                             </h3>
+                        </Reveal>
 
-                            <div className="flex flex-wrap gap-3">
+                        <Reveal>
+                            <div className="flex flex-wrap gap-3 mt-2">
                                 {skills.map((skill) => (
                                     <span
                                         key={skill}
@@ -87,10 +91,10 @@ export default function Skills() {
                                     </span>
                                 ))}
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </Reveal>
+                        </Reveal>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 }

@@ -9,6 +9,8 @@ import {
     FaFilePdf,
 } from "react-icons/fa6";
 
+import Reveal from "./Reveal";
+
 const socials = [
     {
         name: "GitHub",
@@ -44,23 +46,25 @@ const socials = [
 
 export default function SocialLinks() {
     return (
-        <div className="flex items-center gap-4">
-            {socials.map(({ name, href, icon: Icon }) => (
-                <a
-                    key={name}
-                    href={href}
-                    target={href.startsWith("http") ? "_blank" : undefined}
-                    rel={
-                        href.startsWith("http")
-                            ? "noopener noreferrer"
-                            : undefined
-                    }
-                    aria-label={name}
-                    className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
-                >
-                    <Icon size={20} />
-                </a>
-            ))}
-        </div>
+        <Reveal>
+            <div className="flex items-center gap-4">
+                {socials.map(({ name, href, icon: Icon }) => (
+                    <a
+                        key={name}
+                        href={href}
+                        target={href.startsWith("http") ? "_blank" : undefined}
+                        rel={
+                            href.startsWith("http")
+                                ? "noopener noreferrer"
+                                : undefined
+                        }
+                        aria-label={name}
+                        className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
+                    >
+                        <Icon size={20} />
+                    </a>
+                ))}
+            </div>
+        </Reveal>
     );
 }

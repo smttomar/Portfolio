@@ -99,7 +99,7 @@ export default function RightPanel() {
                                     ? undefined
                                     : { opacity: 0, y: -12 }
                             }
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.5 }}
                             className="flex flex-col items-center gap-4 pt-4 text-center"
                         >
                             {active === "home" && <HomeVisual color={accent} />}

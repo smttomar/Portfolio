@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     {/* IMAGE CTA */}
                     <Link
                         href={`/projects/${project.slug}`}
-                        className="absolute inset-0 flex items-center justify-center dark:bg-black/60 bg-white/60 text-sm dark:text-white text-black opacity-0 transition group-hover:opacity-100"
+                        className="absolute inset-0 flex items-center justify-center dark:bg-black/60 bg-white/60 text-sm dark:text-white text-black opacity-0 transition group-hover:opacity-100 hover:scale-110"
                     >
                         View Project →
                     </Link>

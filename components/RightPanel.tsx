@@ -135,7 +135,7 @@ function HomeVisual({ color }: { color: string }) {
                 layoutId="profile-image"
                 src="/profile.png"
                 alt="Sumit Tomar"
-                className="h-32 w-32 rounded-full border border-neutral-700 object-cover"
+                className="h-32 w-32 rounded-full border border-neutral-700 object-cover hover:cursor-pointer transition hover:scale-125"
             />
             <h3 className="text-lg font-semibold">Chandra Pratap Singh</h3>
             <p className="text-sm dark:text-neutral-400 text-neutral-700 text-center">
@@ -279,7 +279,7 @@ function ContactVisual({ color }: { color: string }) {
             <a
                 href="mailto:sumitsngtmr@gmail.com"
                 target="blank"
-                className="inline-block rounded-md border dark:border-white border-black px-4 py-2 text-sm dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition"
+                className="inline-block rounded-md border dark:border-white border-black px-4 py-2 text-sm dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition  hover:scale-110"
             >
                 Contact Me
             </a>

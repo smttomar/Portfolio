@@ -33,13 +33,20 @@ export default function Education() {
 
                     <Reveal>
                         <h3 className="text-xl font-semibold">
-                            Bachelor of Computer Applications (BCA)
+                            <a
+                                href="https://bbdu.ac.in/school-of-computer-applications/soca-programs/bachelor-in-computer-applications/"
+                                target="blank"
+                            >
+                                Bachelor of Computer Applications (BCA)
+                            </a>
                         </h3>
                     </Reveal>
 
                     <Reveal>
                         <p className="text-neutral-700 dark:text-neutral-400">
-                            Babu Banarasi Das University, Lucknow
+                            <a href="https://bbdu.ac.in" target="blank">
+                                Babu Banarasi Das University, Lucknow
+                            </a>
                         </p>
                     </Reveal>
 

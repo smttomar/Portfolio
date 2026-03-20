@@ -28,7 +28,7 @@ export default function Navbar() {
     };
 
     const linkClass = (id: string) =>
-        `relative text-sm transition-colors hover:cursor-pointer ${
+        `relative text-sm transition-colors hover:cursor-pointer  transition hover:scale-105 ${
             active === id
                 ? "text-black dark:text-white"
                 : "text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white"
@@ -46,6 +46,7 @@ export default function Navbar() {
                             width={100}
                             height={100}
                             priority
+                            className=" transition hover:scale-105"
                         />
                     </Link>
                     {/* Desktop Nav */}
@@ -69,8 +70,8 @@ export default function Navbar() {
                             href="/projects"
                             className={`text-sm ${
                                 pathname === "/projects"
-                                    ? "text-black dark:text-white font-semibold"
-                                    : "text-neutral-500 dark:text-neutral-400"
+                                    ? "text-black dark:text-white font-semibold  transition hover:scale-105"
+                                    : "text-neutral-500 dark:text-neutral-400  transition hover:scale-105"
                             }`}
                         >
                             Projects

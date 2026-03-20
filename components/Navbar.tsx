@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -20,6 +20,26 @@ export default function Navbar() {
     const pathname = usePathname();
     const { active } = useActiveSection();
     const [open, setOpen] = useState(false);
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 300) {
+                setShow(false);
+            } else {
+                setShow(true);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
 
     const scrollToSection = (id: string) => {
         setOpen(false);
@@ -35,7 +55,11 @@ export default function Navbar() {
         }`;
 
     return (
-        <header className="sticky top-0 z-50 border-b border-neutral-800 bg-white/80 dark:bg-black/80 backdrop-blur">
+        <header
+            className={`fixed top-0 z-50 w-full transition-transform border-b border-neutral-800 bg-white/80 dark:bg-black/80 backdrop-blur ${
+                show ? "translate-y-0" : "-translate-y-full"
+            }`}
+        >
             <Reveal>
                 <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
                     {/* Logo */}

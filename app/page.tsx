@@ -57,6 +57,7 @@ export default function Home() {
                     </section>
 
                     {/* OTHER SECTIONS */}
+
                     <About />
                     <Skills />
                     <Contact />

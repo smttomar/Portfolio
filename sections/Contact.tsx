@@ -35,7 +35,7 @@ export default function Contact() {
                     free to reach out if you’d like to connect or collaborate.
                 </p>
                 <p className="text-sm text-neutral-500 mb-5">
-                    🟢 Available for new opportunities
+                    Available for new opportunities
                 </p>
             </Reveal>
             <form

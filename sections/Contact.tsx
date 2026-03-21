@@ -30,10 +30,6 @@ export default function Contact() {
             </Reveal>
 
             <Reveal>
-                <p className="text-neutral-700 dark:text-neutral-400 mb-5 mt-5 max-w-xl">
-                    I’m currently open to internship and job opportunities. Feel
-                    free to reach out if you’d like to connect or collaborate.
-                </p>
                 <p className="text-sm text-neutral-500 mb-5">
                     Available for new opportunities
                 </p>

@@ -16,12 +16,12 @@ export default function ThemeToggle() {
         <button
             onClick={() => setTheme(isDark ? "light" : "dark")}
             aria-label="Toggle theme"
-            className="relative inline-flex h-8 w-14 items-center rounded-full hover:cursor-pointer bg-neutral-300 dark:bg-neutral-700 transition-colors"
+            className="relative inline-flex h-6 w-12 items-center rounded-full hover:outline-[#049ab8] hover:outline-2 hover:cursor-pointer bg-neutral-300 dark:bg-neutral-700"
         >
             {/* Sliding circle */}
             <span
-                className={`absolute left-1 flex h-6 w-6 items-center justify-center rounded-full bg-white shadow transition-transform duration-300 ${
-                    isDark ? "translate-x-6" : "translate-x-0"
+                className={`absolute left-1 flex h-5 w-5 items-center justify-center rounded-full bg-transparent shadow transition-transform duration-300 ${
+                    isDark ? "translate-x-5" : "translate-x-0"
                 }`}
             >
                 {/* Icon */}
@@ -37,7 +37,7 @@ function SunIcon() {
     return (
         <svg
             viewBox="0 0 24 24"
-            className="h-4 w-4 text-yellow-500"
+            className="h-4 w-4 text-[#FFEA00]"
             fill="currentColor"
         >
             <circle cx="12" cy="12" r="5" />
@@ -59,7 +59,7 @@ function MoonIcon() {
     return (
         <svg
             viewBox="0 0 24 24"
-            className="h-4 w-4 text-neutral-700"
+            className="h-4 w-4 text-[#f4f4f4]"
             fill="currentColor"
         >
             <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 109.8 9.8z" />

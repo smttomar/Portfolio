@@ -92,7 +92,7 @@ export default function Navbar() {
 
                         <Link
                             href="/projects"
-                            className={`text-sm ${
+                            className={`text-sm hover:text-white ${
                                 pathname === "/projects"
                                     ? "text-black dark:text-white font-semibold  transition hover:scale-105"
                                     : "text-neutral-500 dark:text-neutral-400  transition hover:scale-105"

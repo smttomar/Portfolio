@@ -10,6 +10,25 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        slug: "ai-powered-code-editor",
+        title: "AI-Powered Code Editor",
+        description:
+            "A modern AI-powered code editor built with Next.js that allows users to write, run, and enhance code directly in the browser with real-time AI assistance, multi-file support, live preview, and integrated terminal execution environment.",
+        techStack: [
+            " Next.js",
+            "Monaco Editor",
+            "Prisma",
+            "WebContainer API",
+            "Mongodb",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vercel",
+        ],
+        githubUrl: "https://github.com/smttomar/AI-Powered-Code-Editor",
+        liveUrl: "https://ai-powered-code-editor.vercel.app/",
+        image: "/projects/image.png",
+    },
+    {
         slug: "portfolio",
         title: "Portfolio",
         description:

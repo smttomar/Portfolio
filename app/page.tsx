@@ -30,7 +30,7 @@ export default function Home() {
     }, [setActive]);
 
     return (
-        <main className="h-screen bg-linear-to-br from-neutral-100 via-neutral-300 text-black to-white dark:from-neutral-900 dark:text-white dark:via-neutral-950 dark:to-black dark:bg-linear-to-br">
+        <main className="h-full bg-linear-to-br from-neutral-100 via-neutral-300 text-black to-white dark:from-black dark:text-white dark:via-neutral-900 dark:to-neutral-950 dark:bg-linear-to-br">
             {/* TWO COLUMN LAYOUT */}
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-4 lg:grid-cols-[2fr_1fr]">
                 {/* LEFT: SCROLLING CONTENT */}

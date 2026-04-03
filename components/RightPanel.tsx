@@ -26,6 +26,7 @@ import {
 import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { GrCertificate } from "react-icons/gr";
 
 export default function RightPanel() {
     const { active } = useActiveSection();
@@ -265,6 +266,15 @@ function EducationVisual({ color }: { color: string }) {
             <p className="text-xs dark:text-neutral-500 text-neutral-800 mt-1">
                 Focused on software development & problem solving
             </p>
+            <div className="flex justify-center mt-5 items-center gap-4">
+                <a
+                    href={"/certificate.pdf"}
+                    target={"_blank"}
+                    className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
+                >
+                    <GrCertificate size={25} />
+                </a>
+            </div>
         </div>
     );
 }

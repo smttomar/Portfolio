@@ -5,14 +5,13 @@ import { useEffect, useRef } from "react";
 
 const skillsData = {
     Frontend: [
-        "HTML",
-        "CSS",
         "JavaScript",
         "TypeScript",
         "React",
         "Next.js",
         "Tailwind CSS",
         "DaisyUI",
+        "Shadcn UI",
     ],
     Backend: [
         "Node.js",
@@ -21,17 +20,8 @@ const skillsData = {
         "JWT Authentication",
         "Nodemailer",
     ],
-    Database: ["MongoDB", "Mongoose", "MySQL", "PostgreSQL", "Prisma"],
-    Tools: [
-        "Git",
-        "GitHub",
-        "Postman",
-        "VS Code",
-        "Cloiudinary",
-        "Vercel",
-        "Netlify",
-        "Render",
-    ],
+    Database: ["MongoDB", "Mongoose", "PostgreSQL", "Prisma"],
+    Tools: ["Git", "GitHub", "Postman", "VS Code"],
     Concept: [
         "Middleware",
         "Authentication & Authorization",
@@ -39,13 +29,7 @@ const skillsData = {
         "MVC Architecture",
         "CI/CD(Continuous Integration and Continuous Deployment)",
     ],
-    Deployment: [
-        "Vercel",
-        "Netlify",
-        "Render",
-        "Cloudflare",
-        "Cloud Platforms",
-    ],
+    Deployment: ["Vercel", "Netlify", "Render", "Cloudflare"],
 };
 
 export default function Skills() {

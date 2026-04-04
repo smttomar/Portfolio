@@ -28,13 +28,14 @@ export default function About() {
                     real-world web applications using the MERN stack and
                     Next.js. I work across both frontend and backend, creating
                     responsive user interfaces, developing secure REST APIs, and
-                    managing databases. I have built projects including a
-                    freelance marketplace, authentication systems, SaaS-style
-                    platforms, and backend-focused applications. My work
-                    involves authentication and authorization, server-side
-                    rendering, database design, and cloud deployment. I focus on
-                    writing clean, maintainable code and continuously improving
-                    my skills through hands-on development.
+                    managing databases. I have built projects including an AI
+                    Powered Code Editor freelance marketplace, authentication
+                    systems, SaaS-style platforms, and backend-focused
+                    applications. My work involves authentication and
+                    authorization, server-side rendering, database design, and
+                    cloud deployment. I focus on writing clean, maintainable
+                    code and continuously improving my skills through hands-on
+                    development.
                 </p>
             </Reveal>
             <GithubStats />

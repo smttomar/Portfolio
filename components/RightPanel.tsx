@@ -21,6 +21,7 @@ import {
     SiPostgresql,
     SiVercel,
     SiPrisma,
+    SiShadcnui,
 } from "react-icons/si";
 
 import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa6";
@@ -204,33 +205,53 @@ function SkillsVisual({ color }: { color: string }) {
             label: "JavaScript",
             url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         },
-        { icon: <SiNextdotjs />, label: "Next.js", url: "https://nextjs.org" },
-        { icon: <SiNodedotjs />, label: "Node.js", url: "https://nodejs.org" },
-        { icon: <SiReact />, label: "React", url: "https://react.dev" },
-        { icon: <SiExpress />, label: "Express", url: "https://expressjs.com" },
+        {
+            icon: <SiNextdotjs />,
+            label: "Next.js",
+            url: "https://nextjs.org/docs/",
+        },
+        {
+            icon: <SiNodedotjs />,
+            label: "Node.js",
+            url: "https://nodejs.org/docs/latest/api/",
+        },
+        { icon: <SiReact />, label: "React", url: "https://react.dev/learn" },
+        {
+            icon: <SiExpress />,
+            label: "Express",
+            url: "https://expressjs.com/en/starter/installing.html",
+        },
         {
             icon: <SiPostgresql />,
             label: "PostgreSQL",
-            url: "https://www.postgresql.org",
+            url: "https://www.postgresql.org/docs/",
         },
-        { icon: <SiMysql />, label: "MySQL", url: "https://www.mysql.com" },
+        {
+            icon: <SiShadcnui />,
+            label: "Shadcn UI",
+            url: "https://ui.shadcn.com/docs",
+        },
         {
             icon: <SiTypescript />,
             label: "TypeScript",
-            url: "https://www.typescriptlang.org",
+            url: "https://www.typescriptlang.org/docs",
         },
         {
             icon: <SiTailwindcss />,
             label: "Tailwind",
-            url: "https://tailwindcss.com",
+            url: "https://tailwindcss.com/docs",
         },
         {
             icon: <SiMongodb />,
             label: "MongoDB",
-            url: "https://www.mongodb.com",
+            url: "https://www.mongodb.com/docs/",
         },
-        { icon: <SiVercel />, label: "Vercel", url: "https://vercel.com" },
-        { icon: <SiPrisma />, label: "Prisma", url: "https://www.prisma.io" },
+        { icon: <SiVercel />, label: "Vercel", url: "https://vercel.com/docs" },
+        {
+            icon: <SiPrisma />,
+            label: "Prisma",
+            url: "https://www.prisma.io/docs",
+        },
     ];
 
     return (

@@ -28,12 +28,6 @@ export default function Contact() {
             <Reveal>
                 <h2 className="text-3xl font-bold mb-6">Contact</h2>
             </Reveal>
-
-            <Reveal>
-                <p className="text-sm text-neutral-500 mb-5">
-                    Available for new opportunities
-                </p>
-            </Reveal>
             <form
                 onSubmit={(e) => {
                     e.preventDefault();

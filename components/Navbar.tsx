@@ -70,7 +70,6 @@ export default function Navbar() {
                             width={100}
                             height={100}
                             priority
-                            className=" transition hover:scale-105"
                         />
                     </Link>
                     {/* Desktop Nav */}

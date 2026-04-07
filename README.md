@@ -57,7 +57,7 @@ public/
 
 Clone the repository:
 
-git clone https://github.com/smttomar/portfolio.git  
+git clone https://github.com/username/portfolio.git  
 cd portfolio
 
 Install dependencies:

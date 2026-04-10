@@ -137,7 +137,7 @@ function HomeVisual({ color }: { color: string }) {
                 layoutId="profile-image"
                 src="/profile.png"
                 alt="Sumit Tomar"
-                className="h-32 w-32 rounded-full border border-neutral-700 object-cover hover:cursor-pointer transition hover:scale-125"
+                className="h-32 w-32 rounded-full border border-neutral-700 object-cover hover:cursor-pointer"
             />
             <h3 className="text-lg font-semibold">Chandra Pratap Singh</h3>
             <p className="text-sm dark:text-neutral-400 text-neutral-700 text-center">

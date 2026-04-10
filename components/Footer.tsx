@@ -7,8 +7,8 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-800 dark:text-neutral-400">
                 <Reveal>
                     <p>
-                        © {new Date().getFullYear()} C. P. Singh. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Chandra Pratap Singh. All
+                        rights reserved.
                     </p>
                 </Reveal>
                 <SocialLinks />

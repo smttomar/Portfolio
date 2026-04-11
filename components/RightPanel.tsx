@@ -192,7 +192,12 @@ function AboutVisual({ color }: { color: string }) {
                         aria-label={name}
                         className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
                     >
-                        <Icon size={25} />
+                        <Tooltip>
+                            <TooltipTrigger className="hover:cursor-pointer">
+                                <Icon size={25} />
+                            </TooltipTrigger>
+                            <TooltipContent>{name}</TooltipContent>
+                        </Tooltip>
                     </a>
                 ))}
             </div>

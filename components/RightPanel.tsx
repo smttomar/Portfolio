@@ -28,6 +28,8 @@ import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { GrCertificate } from "react-icons/gr";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { Icon } from "lucide-react";
 
 export default function RightPanel() {
     const { active } = useActiveSection();
@@ -293,7 +295,12 @@ function EducationVisual({ color }: { color: string }) {
                     target={"_blank"}
                     className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
                 >
-                    <GrCertificate size={25} />
+                    <Tooltip>
+                        <TooltipTrigger className="hover:cursor-pointer">
+                            <GrCertificate size={25} />
+                        </TooltipTrigger>
+                        <TooltipContent>Certificates</TooltipContent>
+                    </Tooltip>
                 </a>
             </div>
         </div>

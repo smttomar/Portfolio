@@ -6,8 +6,9 @@ import Navbar from "@/components/Navbar";
 import { ActiveSectionProvider } from "@/components/ActiveSectionProvider";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "@/lib/utils";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const inter = Inter({
     subsets: ["latin"],
@@ -75,7 +76,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className={cn("font-sans", geist.variable)}
+        >
             <body className={inter.className}>
                 <ThemeProvider
                     attribute="class"
@@ -84,7 +89,7 @@ export default function RootLayout({
                 >
                     <ActiveSectionProvider>
                         <Navbar />
-                        {children}
+                        <TooltipProvider>{children}</TooltipProvider>
                     </ActiveSectionProvider>
                 </ThemeProvider>
                 <Analytics />

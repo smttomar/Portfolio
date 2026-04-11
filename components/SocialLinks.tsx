@@ -9,6 +9,12 @@ import {
     FaFilePdf,
 } from "react-icons/fa6";
 
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 import Reveal from "./Reveal";
 
 const socials = [
@@ -61,7 +67,12 @@ export default function SocialLinks() {
                         aria-label={name}
                         className="dark:text-neutral-400 text-neutral-800 transition-transform hover:scale-110 dark:hover:text-white hover:text-black"
                     >
-                        <Icon size={20} />
+                        <Tooltip>
+                            <TooltipTrigger className="hover:cursor-pointer">
+                                <Icon size={20} />
+                            </TooltipTrigger>
+                            <TooltipContent>{name}</TooltipContent>
+                        </Tooltip>
                     </a>
                 ))}
             </div>

@@ -42,8 +42,43 @@ export default function Home() {
                         className="min-h-screen lg:snap-start flex flex-col justify-center gap-6"
                     >
                         <Reveal>
-                            <h1 className="text-4xl font-bold">
-                                Hi, I’m Chandra Pratap Singh 👋
+                            <h1 className="text-3xl font-bold">
+                                Hi, I'm Chandra Pratap Singh{" "}
+                                <span className="inline-block origin-[70%_70%] wave">
+                                    👋
+                                </span>
+                                <style jsx>{`
+                                    .wave {
+                                        animation: wave 2s infinite;
+                                    }
+
+                                    @keyframes wave {
+                                        0% {
+                                            transform: rotate(0deg);
+                                        }
+                                        15% {
+                                            transform: rotate(14deg);
+                                        }
+                                        30% {
+                                            transform: rotate(-8deg);
+                                        }
+                                        40% {
+                                            transform: rotate(14deg);
+                                        }
+                                        50% {
+                                            transform: rotate(-4deg);
+                                        }
+                                        60% {
+                                            transform: rotate(10deg);
+                                        }
+                                        70% {
+                                            transform: rotate(0deg);
+                                        }
+                                        100% {
+                                            transform: rotate(0deg);
+                                        }
+                                    }
+                                `}</style>
                             </h1>
                         </Reveal>
 

@@ -56,7 +56,7 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed top-0 z-50 w-full transition-transform border-b border-neutral-800 bg-white/80 dark:bg-black/80 backdrop-blur ${
+            className={`fixed top-0 z-50 w-full transition-transform border-b border-neutral-800 dark:bg-zinc-900 bg-zinc-200 backdrop-blur ${
                 show ? "translate-y-0" : "-translate-y-full"
             }`}
         >

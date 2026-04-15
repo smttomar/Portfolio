@@ -26,7 +26,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     }
 
     return (
-        <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white py-20">
+        <main className="min-h-screen dark:bg-zinc-900 bg-zinc-200 text-black dark:text-white py-20">
             <div className="max-w-3xl mx-auto px-4">
                 {/* Project Image */}
                 {project.image && (

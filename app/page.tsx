@@ -30,7 +30,7 @@ export default function Home() {
     }, [setActive]);
 
     return (
-        <main className="h-full bg-linear-to-br from-neutral-100 via-neutral-300 text-black to-white dark:from-black/40 dark:text-white dark:via-neutral-950 dark:to-neutral-900/30 dark:bg-linear-to-br">
+        <main className="h-full dark:bg-zinc-900 bg-zinc-200 text-zinc-950 dark:text-zinc-100">
             {/* TWO COLUMN LAYOUT */}
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-4 lg:grid-cols-[2fr_1fr]">
                 {/* LEFT: SCROLLING CONTENT */}
@@ -48,7 +48,7 @@ export default function Home() {
                         </Reveal>
 
                         <Reveal>
-                            <p className="max-w-xl text-neutral-600 dark:text-neutral-400">
+                            <p className="max-w-xl text-zinc-600 dark:text-zinc-400">
                                 Full-Stack Developer specializing in MERN and
                                 Next.js, passionate about building scalable,
                                 secure, and production-ready web applications.

@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 
 export default function ProjectsPage() {
     return (
-        <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white py-25">
+        <main className="min-h-screen dark:bg-zinc-900 bg-zinc-200 text-black dark:text-white py-25">
             <div className="max-w-6xl mx-auto px-4">
                 <Reveal>
                     <h1 className="text-4xl text-center font-bold">Projects</h1>

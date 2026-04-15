@@ -83,8 +83,7 @@ export default function RightPanel() {
                     onMouseMove={handleMouseMove}
                     onMouseLeave={resetMouse}
                     style={prefersReducedMotion ? {} : { rotateX, rotateY }}
-                    className="relative w-full max-w-sm rounded-xl border border-neutral-800 bg-linear-to-br from-neutral-200 via-neutral-300 text-black to-white p-6 backdrop-blur focus-within:ring-black focus-within:ring-2 dark:focus-within:ring-white dark:bg-linear-to-br dark:from-neutral-900 dark:text-white dark:via-neutral-950 dark:to-black
-"
+                    className="relative w-full max-w-sm rounded-xl border-neutral-800 text-black dark:text-white dark:bg-zinc-900 bg-zinc-200 p-6 shadow-lg dark:shadow-zinc-950 shadow-zinc-400"
                     tabIndex={0}
                 >
                     <AnimatePresence mode="wait">
@@ -135,11 +134,10 @@ export default function RightPanel() {
 function HomeVisual({ color }: { color: string }) {
     return (
         <>
-            <motion.img
-                layoutId="profile-image"
+            <img
                 src="/profile.png"
                 alt="Sumit Tomar"
-                className="h-32 w-32 rounded-full border border-neutral-700 object-cover hover:cursor-pointer"
+                className="h-32 w-32 rounded-full border border-neutral-700 object-cover"
             />
             <h3 className="text-lg font-semibold">Chandra Pratap Singh</h3>
             <p className="text-sm dark:text-neutral-400 text-neutral-700 text-center">

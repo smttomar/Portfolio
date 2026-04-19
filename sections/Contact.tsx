@@ -64,7 +64,7 @@ export default function Contact() {
                             type="text"
                             name="name"
                             required
-                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
+                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-zinc-800 bg-zinc-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="Your name"
                         />
                     </Reveal>
@@ -78,7 +78,7 @@ export default function Contact() {
                             type="email"
                             name="email"
                             required
-                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
+                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-zinc-800 bg-zinc-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="you@example.com"
                         />
                     </Reveal>
@@ -92,7 +92,7 @@ export default function Contact() {
                             name="message"
                             rows={4}
                             required
-                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-black bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
+                            className="w-full rounded-md border dark:border-neutral-800 border-neutral-400 dark:bg-zinc-800 bg-zinc-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-black"
                             placeholder="Tell me about your idea, project, or role..."
                         />
                     </Reveal>

@@ -81,6 +81,26 @@ export const projects: Project[] = [
         image: "/projects/cloudinary.png",
     },
     {
+        slug: "full-stack-drive",
+        title: "Full Stack Drive (File Management System)",
+        description:
+            "A full-stack Google Drive-like file management system built with React, Node.js, MongoDB, Cloudinary, and Vercel, featuring authentication, file uploads, CRUD operations, dark mode, and MCP-based AI integration.",
+        techStack: [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "Cloudinary",
+            "JWT",
+            "Vercel",
+            "Render",
+        ],
+        githubUrl: "https://github.com/smttomar/Dobby-Ads-Assignment",
+        liveUrl: "https://dobby-ads-assignment-psi.vercel.app",
+        image: "/projects/drive.png",
+    },
+    {
         slug: "authentication-app",
         title: "Authentication App – Full-Stack Application",
         description:

@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: Project }) {
     const hasImage = Boolean(project.image);
 
     return (
-        <div className="group flex h-fit flex-col overflow-hidden rounded-xl border dark:border-neutral-400 border-neutral-800 dark:bg-zinc-800 bg-zinc-300">
+        <div className="group flex h-full flex-col overflow-hidden rounded-xl border dark:border-neutral-400 border-neutral-800 dark:bg-zinc-800 bg-zinc-300">
             {/* IMAGE (ONLY IF AVAILABLE) */}
             {hasImage && (
                 <div className="relative">
@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                             alt={project.title}
                             width={800}
                             height={450}
-                            className="h-48 w-full object-cover"
+                            className="h-full w-full object-cover"
                         />
                     </Reveal>
                     {/* IMAGE CTA */}

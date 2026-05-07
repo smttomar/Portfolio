@@ -20,7 +20,7 @@ export default function ThemeToggle() {
         >
             {/* Sliding circle */}
             <span
-                className={`absolute left-1 flex h-5 w-5 items-center justify-center rounded-full bg-transparent shadow transition-transform duration-300 ${
+                className={`absolute left-1 flex h-5 w-5 items-center justify-center rounded-full bg-transparent shadow dark:shadow-neutral-900 shadow-neutral-400 transition-transform duration-300 ${
                     isDark ? "translate-x-5" : "translate-x-0"
                 }`}
             >

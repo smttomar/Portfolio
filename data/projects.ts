@@ -121,6 +121,16 @@ export const projects: Project[] = [
         image: "/projects/auth.png",
     },
     {
+        slug: "Password-Generator-App",
+        title: "Password Generator App",
+        description:
+            "A simple and responsive Password Generator built with React, Vite, and TailwindCSS. This app allows users to generate strong and customizable passwords with options to adjust length, include numbers, symbols, and more.",
+        techStack: ["React 19", "Vite", "TailwindCSS 4"],
+        githubUrl: "https://github.com/smttomar/Password-generator",
+        liveUrl: "https://password-generator-rho-eight-62.vercel.app/",
+        image: "/projects/password-generator.png",
+    },
+    {
         slug: "Task-Management-Web-Application",
         title: "Task Management Web Application",
         description:
@@ -180,14 +190,5 @@ export const projects: Project[] = [
             "MongoDB",
         ],
         githubUrl: "https://github.com/smttomar/Project-Management-backend",
-    },
-    {
-        slug: "Password-Generator-App",
-        title: "Password Generator App",
-        description:
-            "A simple and responsive Password Generator built with React, Vite, and TailwindCSS. This app allows users to generate strong and customizable passwords with options to adjust length, include numbers, symbols, and more.",
-        techStack: ["React 19", "Vite", "TailwindCSS 4"],
-        githubUrl: "https://github.com/smttomar/Password-generator",
-        liveUrl: "https://smttomar.github.io/Password-generator/",
     },
 ];

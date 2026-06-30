@@ -101,6 +101,27 @@ export const projects: Project[] = [
         image: "/projects/drive.png",
     },
     {
+        slug: "notice-board",
+        title: "Notice Board",
+        description:
+            "A modern full-stack Notice Board application built with Next.js, Prisma, and TiDB Cloud. It enables administrators to securely manage notices with complete CRUD operations, server-side validation, authentication, search, urgent notice prioritization, responsive design, and Open Graph support for rich social sharing.",
+        techStack: [
+            "Next.js",
+            "React",
+            "Prisma ORM",
+            "TiDB Cloud",
+            "MySQL",
+            "Tailwind CSS",
+            "JavaScript",
+            "HTTP-only Cookies",
+            "REST API",
+            "Vercel",
+        ],
+        githubUrl: "https://github.com/smttomar/noticeboard",
+        liveUrl: "https://noticeboard-puce.vercel.app/",
+        image: "/projects/notice-board.png",
+    },
+    {
         slug: "authentication-app",
         title: "Authentication App – Full-Stack Application",
         description:

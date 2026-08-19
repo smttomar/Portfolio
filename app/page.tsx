@@ -43,7 +43,7 @@ export default function Home() {
                     >
                         <Reveal>
                             <h1 className="text-3xl font-bold">
-                                Hi, I'm Chandra Pratap Singh{" "}
+                                Hi, I&apos;m Chandra Pratap Singh{" "}
                                 <span className="inline-block origin-[70%_70%] wave">
                                     👋
                                 </span>
